@@ -146,6 +146,9 @@ li {
 }
 .category .heading {
   margin-bottom: 10px;
+  font-size: 18px;
+  color: #000000;
+  font-weight: 600;
 }
 .category .content {
   margin-left: 15px;
