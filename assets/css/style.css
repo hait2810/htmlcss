@@ -129,6 +129,7 @@ li {
   border-radius: 8px;
   border: none;
   background-color: #4200ff;
+  cursor: pointer;
   transform: translateX(-10px);
 }
 .category .list__item {
