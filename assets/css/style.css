@@ -53,6 +53,7 @@ li {
 :root {
   --black-color: #000000;
   --gray-color:  #f2f2f2;
+  --white-color: #fff;
 }
 .dp-flex {
   display: flex;
@@ -63,21 +64,33 @@ li {
 .container {
   max-width: 1281px;
   margin: 0 auto;
+  
 }
 .menu a {
   font-size: 22px;
   color: var(--black-color);
   font-weight: 500;
 }
+.menu a:hover {
+  border-bottom: 2px solid gray;
+}
 .phone__number {
   font-size: 18px;
   color: var(--black-color);
   font-weight: 500;
 }
-
+header {
+  position: fixed;
+  z-index: 1;
+  background-color: var(--white-color);
+  top: 0;
+  left: 0;
+  right: 0;
+}
 .header-top {
   height: 90px;
   align-items: center;
+  
   justify-content: space-between;
 }
 .list__icon img {
@@ -99,7 +112,9 @@ li {
 .menu li {
   margin-right: 30px;
 }
-
+.banner {
+  margin-top: 90px;
+}
 .banner .row {
   justify-content: space-between;
   padding: 120px 50px;
@@ -199,6 +214,13 @@ li {
 .products .product .logo img {
   margin: 0 auto;
   padding: 20px 0;
+  transition: 1s;
+  
+}
+.products .product .logo img:hover {
+  transform: rotate(360deg);
+  transition: 2s;
+  
 }
 .products .infomation {
   padding: 10px;
@@ -211,7 +233,8 @@ li {
 
 .category__products .item:hover {
   background-color: blue;
-  color: #fff;
+  color: var(--white-color);
+  
 }
 .products .evaluate_price {
   justify-content: space-between;
@@ -254,7 +277,7 @@ li {
   gap: 10px;
 }
 .paging button {
-  background-color: #fff;
+  background-color: var(--white-color);
   border: 1px solid #dfe3e8;
   border-radius: 2px;
   width: 32px;
@@ -328,6 +351,11 @@ li {
 .brand .icon img {
   margin: 0 auto;
   height: 66px;
+  transition: 1s;
+}
+.brand .icon img:hover {
+  transform: rotate(360deg);
+  transition: 2s;
 }
 .brand .name_brand {
   text-align: center;
@@ -336,4 +364,49 @@ li {
 .brand .title {
   font-size: 32px;
   margin-bottom: 40px;
+}
+footer {
+  background-color: #2F2F2F;
+}
+footer .social ul li{
+  display: inline-block;
+  margin-right: 20px;
+}
+footer .social img {
+  transition: 1s;
+}
+footer .social img:hover {
+  transition: 2s;
+  transform: rotate(360deg);
+}
+footer a, footer h3 {
+    color: var(--white-color);
+}
+footer .content {
+  justify-content: space-between;
+}
+footer h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+footer a {
+  font-size: 20px;
+  font-weight: 700;
+}
+footer .logo a {
+  font-size: 16px;
+}
+footer .logo img {
+  margin-bottom: 3px;
+}
+
+footer ul {
+  margin-top: 10px;
+}
+footer .infomation ul li, footer .contact ul li {
+  margin-bottom: 10px;
+}
+footer {
+  margin-top: 120px;
+  padding: 30px 0 80px 0;
 }
