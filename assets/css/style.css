@@ -213,12 +213,9 @@ header {
 .products .product .logo img {
   margin: 0 auto;
   padding: 20px 0;
-  transition: 1s;
+
 }
-.products .product .logo img:hover {
-  transform: rotate(360deg);
-  transition: 2s;
-}
+
 .products .infomation {
   padding: 10px;
 }
@@ -346,12 +343,9 @@ header {
 .brand .icon img {
   margin: 0 auto;
   height: 66px;
-  transition: 1s;
+
 }
-.brand .icon img:hover {
-  transform: rotate(360deg);
-  transition: 2s;
-}
+
 .brand .name_brand {
   text-align: center;
   margin-top: 20px;
@@ -367,13 +361,7 @@ footer .social ul li {
   display: inline-block;
   margin-right: 20px;
 }
-footer .social img {
-  transition: 1s;
-}
-footer .social img:hover {
-  transition: 2s;
-  transform: rotate(360deg);
-}
+
 footer a,
 footer h3 {
   color: var(--white-color);
